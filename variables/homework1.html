@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS HW1</title>
+</head>
+
+<body>
+  <script>
+    "use strict";
+    
+    //  Задача 1,2
+    
+    var name;
+    var price;
+    
+    name = 'Телепорт бытовой VZHIH-101';
+    price = 10000;
+    
+    var storage = [`В наличии имеется: ${name}.`, `Стоимость товара: ${price} Q.`];
+    console.log(storage[0]);
+    console.log(storage[1]);
+    
+    
+    //  Задача 3
+    
+    var quantity;
+    var discount = 10;
+    var resultPrice;
+    
+    quantity = prompt('Введите кол-во товаров для покупки со скидкой.');
+    if(Number(quantity)){
+      quantity = Math.round(quantity);
+      price = quantity * price;
+      resultPrice = price - (price * (discount / 100));
+      console.log(`Цена покупки составит: ${resultPrice} Q.`)
+    }
+    else{
+      console.log('Нужно было ввести число');
+    }
+    
+    //  Дополнительное задание
+    
+//    var purchasePrice = 6500; 
+//    var budget = 52334224;
+//    
+//    var balanceAfterPurchase = budget % purchasePrice;
+//    var quantityAfterPurchase = (budget - balanceAfterPurchase) / purchasePrice;
+//    console.log(`Мы можем закупить ${quantityAfterPurchase} единиц товара, после закупки на счету останется ${balanceAfterPurchase} Q.`)
+
+  </script>
+
+</body>
+
+</html>
